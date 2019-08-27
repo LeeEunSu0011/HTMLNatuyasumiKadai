@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/sytle.css" />
+	<title>Presentation</title>
+</head>
+<body>
+	<header>
+		<div class="name">
+			名前
+			<div class="nameline"><a href="javascript:;">李 恩洙</a></div>
+			<- クリック!
+		</div>
+
+		<div class="portrait"></div>
+
+		<div class="title">Welcome to my Portfolio</div>
+	</header>
+
+	<main>
+		<div class="job">
+			I hope
+			<div class="jobnames">
+				<ul class="jobnames-list">
+					<li>Programer</li>
+					<li>Creater</li>
+					<li>Programer</li>
+					<li>Creater</li>
+					<li>Programer</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="presentation">
+			<h2>自己PR</h2>
+			<div class="presentation-substance">
+				<p>
+					私が学生の時代に最も力を入れたものは、グループ製作です。今まで私にとってグループ製作は、ただ作品を出せばいいと思いました。ですが、高校に入学してから、課題としてチーム制作をすることになりました。チームを組んでから、中々進めなかったので、よく進んでいた隣のグループのリーダーをそのまま真似をしました。真似している間に自分から近づかないと、何も始まらないのを気付き、積極的にチームメンバーとコンセプトやあらすじ等をどう決めるか話し合ったり、意見を交換したりしました。
+					最初は誰も話さなかったので、私から意見を言い始めたところ、どんどんお互いの意見が交換されるようになりました。そして、お互い考えの差を縮めて、重ねているところとを中心にして、制作し始めました。その結果、以前よりもっといい作品を出せることが出来ました。そして、成果物を出せるまでの過程でコミュニケーションがグループ製作の中で一番重要だと感じました。これところか、今まで感じられなかった達成感も感じることが出来ました。この後、私は科学サークルに入って、学校の先生からもらった主体をどう解けていけるのかについての討論会を開いたりしました。こうしたら、以前より2倍くらい円滑に話せることが出来ようになりました。そして、限定された材料で橋を作ってどれだけ重い物を耐えるのかを主体にした学校内で行われた科学大会でコミュニケーションを中心にしてやりました。こうしたら、お互い考えに対して見過ごした欠点を直しながら製作に入りました。その結果、以前よりも重い物を耐えられるようになった橋を作れるようになりました。
+					ここで、お互いの意見の欠点や問題点を直せることも、一人で出せなかったアイデアを交換して今まで出なかった新しいアイデアが出る可能性も高くさせてくれるコミュニケーションを生かして、自分が考えて来たゲームの楽しいことを他の人と意見を交換して、もっと良いゲームを、面白いゲームを、楽しいゲームを作って行きたいと思っています。
+				</p>
+			</div>
+		</div>
+
+		<div class="profile-section">
+			<h2>自分のスキル</h2>
+			<ul class="graph">
+				<li data-status="60%">c++,c#</li>
+				<li data-status="60%">unity</li>
+				<li data-status="60%">novbelsphere.js</li>
+				<li data-status="60%">HTML, CSS</li>
+				<li data-status="60%">3dx max</li>
+				<li data-status="40%">JavaScript</li>
+				<li data-status="40%">UnrealEngine</li>
+				<li data-status="60%">Siv3d</li>
+			</ul>
+		</div>
+
+		<div class="portfolio-section">
+			<h2>プロジェクト：本ポ-トフォリオサイト</h2>
+			<ul class="substance">
+				<li class="outline"><a href="javascript:;">概要</a></li>
+				<li class="useskill"><a href="javascript:;">使用したスキル</a></li>
+				<li class="part"><a href="javascript:;">自分の役割</a></li>
+				<li class="githublink"><a href="javascript:;">GithubLink</a></li>
+			</ul>
+		</div>
+
+		<script>
+			$(function () {
+				$('.nameline').click(function () {
+					$(this).text("イ　ウンスです。よろしくお願いいたします！");
+				});
+			});
+
+			$(function () {
+				$('.outline').one('click', function () {
+					$('.outline').after('<creatediv>授業の中で、このサイトを制作しました。</creatediv>');
+				});
+			});
+
+			$(function () {
+				$('.useskill').one('click', function () {
+					$('.useskill').after('<creatediv>HTML,CSS, Jquery, javascript を利用しました。</creatediv>');
+				});
+			});
+
+			$(function () {
+				$('.part').one('click', function () {
+					$('.part').after('<creatediv>一人で制作を完結させました。</creatediv>');
+				});
+			});
+
+			$(function () {
+				$('.githublink').one('click', function () {
+					$('.githublink').after('<creatediv><a href="https://github.com/LeeEunSu0011"><div class="githubimage"></div></a></creatediv>');
+				});
+			});
+		</script>
+	</main>
+
+	<footer>
+		<div class="footernote">
+			<h3>連絡先</h3>
+			<ul class="information">
+				<p>✉メール : luke190256@gmail.com </p>
+				<p>☎携帯電話 : 080-8865-9525</p>
+			</ul>
+		</div>
+	</footer>
+
+
+</body>
+</html>

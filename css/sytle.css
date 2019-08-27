@@ -1,0 +1,208 @@
+@keyframes rolling{
+	0% {
+		transform: translateY(0);
+	}
+
+	25% {
+		transform: translateY(-20%);
+	}
+
+	50% {
+		transform: translateY(-40%);
+	}
+
+	75% {
+		transform: translateY(-60%);
+	}
+
+	100% {
+		transform: translateY(-80%);
+	}	
+}
+
+body, h2, ul, li ,p{
+	margin: 0;
+	padding: 0;
+}
+
+footer, h3, h4{
+	margin: 0;
+}
+
+body {
+
+	background-color: #111;
+	color: white;
+}
+
+main, footer {
+	width: 1000px;
+	margin: auto;
+}
+
+.portrait {
+	width: 100%;
+	height: 500px;
+	background-image: url(../images/titleimage.png);
+	background-size: cover;
+	background-position: center center;
+}
+
+.title {
+	font-size: 10rem;
+	text-align: center;
+	color: #FF8C00;
+	background: linear-gradient(90deg, rgba(164,0,255,1) 0%, rgba(231,100,255,1) 50%, rgba(254,219,251,1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	padding-bottom: 1.3rem;
+}
+
+.name{
+	font-size: 1.5rem;
+	padding: 30px 30px 30px 30px;
+}
+
+.nameline {
+	display: inline-block;
+	font-size: 1.5rem;
+	color: aqua;
+}
+
+.job {
+	font-size: 70px;
+	line-height: 1.3em;
+	padding-bottom: 0.5em;
+	text-align: center;
+}
+
+.jobnames {
+	display: inline-block;
+	overflow: hidden;
+	height: 1.3em;
+	position: relative;
+	color: purple;
+}
+
+.jobnames::after {
+	content: ' ';
+	background-color: red;
+	position: absolute;
+	border: 1px solid red;
+	margin-left: -1em;
+	box-shadow: inset 0 0 20px 20px #111;
+}
+
+.jobnames-list {
+	animation-name: rolling;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: reverse;
+}
+
+.presentation h2 {
+	font-size:2rem;
+	padding-bottom: 1.3em;
+	border-top: solid 2px;
+	color: orange;
+}
+
+.presentation-substance p {
+	font-size: 1.3em;
+	padding: 0 1.3rem;
+	padding-bottom:1.5rem;
+}
+
+.profile-section h2 {
+	font-size: 2rem;
+	padding-bottom: 1.3em;
+	border-top: solid 2px;
+	color: orange;
+}
+
+.graph{
+	padding-bottom: 1.3em;
+}
+
+.graph li {
+	background: rgb(255,100,0);
+	background: linear-gradient(90deg, rgba(255,100,0,1) 0%, rgba(255,169,0,1) 50%, rgba(255,233,0,1) 100%);
+	border: 1px solid blue;
+	background-color: dodgerblue;
+	color: white;
+	padding: 0.3em 1em;
+	margin: 0.4em 0;
+	border-radius: 50px;
+	overflow: hidden;
+}
+
+.graph li::before {
+	content: attr(data-status);
+	float: right;
+}
+
+.graph li[data-status = "60%"] {
+	width: 60%;
+	box-sizing: border-box;
+}
+
+.graph li[data-status = "40%"] {
+	width: 40%;
+	box-sizing: border-box;
+}
+
+.portfolio-section h2 {
+	font-size: 2rem;
+	padding-bottom: 1.3em;
+	border-top: solid 2px;
+	color: orange;
+}
+
+.substance {
+	padding-bottom: 1.3em;
+	overflow: hidden;
+}
+
+.substance li {
+	padding-bottom: 0.5em;
+	font-size: 30px;
+}
+
+creatediv {
+	width:1000px;
+	display: inline-block;
+	padding-left: 100px;
+	padding-bottom: 1.3rem;
+	font-size: 20px;
+	color:white;
+}
+
+.githubimage {
+	background-image: url(../images/githubimg.png);
+	background-size: cover;
+	background-position: center center;
+	width: 500px;
+	height: 500px;
+}
+
+footer{
+	margin-top: 80px;
+	width: 100%;
+	background-color: deepskyblue;
+	padding: 60px 0;
+}
+
+.footernote h3{
+	width: 1000px;
+	color: white;
+	margin: auto;
+	font-size: 1.3rem;
+}
+
+.information {
+	width: 1000px;
+	color: white;
+	margin: auto;
+	padding-top: 30px;
+	line-height: 1.8rem;
+}
