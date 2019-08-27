@@ -127,7 +127,7 @@ main, footer {
 .graph li {
 	background: rgb(255,100,0);
 	background: linear-gradient(90deg, rgba(255,100,0,1) 0%, rgba(255,169,0,1) 50%, rgba(255,233,0,1) 100%);
-	border: 1px solid blue;
+	border: 1px solid red;
 	background-color: dodgerblue;
 	color: white;
 	padding: 0.3em 1em;
